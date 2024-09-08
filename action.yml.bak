@@ -9,6 +9,6 @@ runs:
   using: "composite"
   steps:
     - name: Memanggil Fungsi
-      run: |
-         echo ${{inputs.nama}}
-      shell: bash
+       run: |
+          echo ${{inputs.nama}}
+       shell: bash
