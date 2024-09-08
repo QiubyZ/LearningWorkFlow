@@ -1,13 +1,14 @@
-name: 'Kivy App to APK'
-description: 'Convert Kivy app to APK'
+name: 'My WorkFlows"
+description: 'Ngetes Pembuatan Workflow'
 inputs:
-  python-version:
-    description: 'Python version to use'
-    default: '3.8'
-  workdir:
-    default: '.'
-    description: 'Working directory'
-  buildozer-cmd:
-    default: 'buildozer android debug'
-    description: 'Buildozer command to use'
+  nama:
+    default: 'Haloo ini testing'
+    description: 'Fungsi Ini Testing'
     
+runs:
+  using: "composite"
+  steps:
+    - name: Memanggil Fungsi
+       run: |
+          echo ${{inputs.nama}}
+       shell: bash
