@@ -1,5 +1,6 @@
 name: 'My WorkFlows"
 description: 'Ngetes Pembuatan Workflow'
+
 inputs:
   nama:
     default: 'Haloo ini testing'
@@ -8,5 +9,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Memanggil Fungsi
+    - name: Memanggil Fungsi ${{inputs.nama}}
       run: echo ${{inputs.nama}}
