@@ -8,4 +8,5 @@ runs:
   steps:
     - name: Memanggil Fungsi ${{inputs.nama}}
       run: echo ${{inputs.nama}}
+      shell: bash
 
