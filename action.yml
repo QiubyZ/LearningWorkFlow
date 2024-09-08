@@ -1,12 +1,11 @@
-name: 'My WorkFlows'
-
+name: My WorkFlows
 inputs:
   nama:
-    default: 'Haloo ini testing'
-    description: 'Fungsi Ini Testing'
-    
+    default: Haloo ini testing
+    description: Fungsi Ini Testing
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Memanggil Fungsi ${{inputs.nama}}
       run: echo ${{inputs.nama}}
+
